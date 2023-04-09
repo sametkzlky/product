@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+  body {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .container {
+    width: 100%;
+  }
+  .product-wrapper {
+    width: 100%;
+    padding-left: $sm !important;
+    padding-right: $sm !important;
+    
+    &::after, &::before {
+      display: none;
+    }
+  }
+  .title {
+    text-align: center;
+  }
+  .group {
+    justify-content: space-evenly;
+  }
+  .horizantal {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

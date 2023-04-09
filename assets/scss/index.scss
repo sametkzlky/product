@@ -1,0 +1,59 @@
+@import "./base";
+@import "./variables";
+@import "./components";
+@import "./shared";
+
+body {
+  font-family: $base-font;
+  font-weight: $normal;
+  background-color: $mischka;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-wrapper {
+  position: relative;
+  background-color: $porcelain;
+  border-radius: 26px;
+  padding: $lg;
+  box-shadow: $shadow;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 200px;
+    top: -130px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: $athens-gray;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 200px;
+    bottom: -130px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: $athens-gray;
+    z-index: -1;
+  }
+}
+
+.title {
+  margin-bottom: 24px;
+}
+
+.group {
+  margin-bottom: 56px;
+}
+
+.horizantal {
+  display: flex;
+  gap: 30px;
+}

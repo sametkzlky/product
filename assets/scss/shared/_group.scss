@@ -1,0 +1,12 @@
+.group {
+  display: flex;
+  align-items: center;
+  gap: $xs;
+
+  &.veritacal {
+    flex-direction: column;
+  }
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}
